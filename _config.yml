@@ -18,19 +18,41 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Spirit of Radio Jekyll Theme
+email: kloskoz@vcu.edu
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+#twitter_username: jekyllrb
+github_username:  zklosko
+
+# Where things are
+source              : .
+destination         : ./_site
+collections_dir     : .
+plugins_dir         : _plugins
+layouts_dir         : _layouts
+data_dir            : _data
+includes_dir        : _includes
+#sass:
+#  sass_dir: _sass
+collections:
+  posts:
+    output          : true
+
+favicon: favicon.ico
+
+# For splash page layout only, applies to all splash pages
+headimage: spacecat.jpg
+headtext: Does this thing work?
+headsubtext: I sure hope so
+headbuttonurl: http://www.google.com
+headbuttontext: Does Google know?
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 

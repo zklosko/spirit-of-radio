@@ -1,0 +1,11 @@
+topnav:
+- page: Features
+  url: features
+- page: FAQ
+  url: faq
+- page: Install
+  url: quickstart
+- page: Tutorials
+  url: advanced-configuration
+- page: Contribute to LibreTime
+  url: contribute
