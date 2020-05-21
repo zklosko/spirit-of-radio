@@ -9,3 +9,15 @@ topnav:
   url: advanced-configuration
 - page: Contribute to LibreTime
   url: contribute
+  
+docsnav:
+- title: Some config
+  subfolderitems:
+  - page: Config
+    url: config1
+  - page: More config
+    url: config2
+- title: Even more config
+  subfolderitems:
+  - page: Admin stuff
+    url: adminstuff

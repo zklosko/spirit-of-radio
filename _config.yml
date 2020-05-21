@@ -37,8 +37,8 @@ plugins_dir         : _plugins
 layouts_dir         : _layouts
 data_dir            : _data
 includes_dir        : _includes
-#sass:
-#  sass_dir: _sass
+sass:
+  sass_dir: _scss
 collections:
   posts:
     output          : true
@@ -46,7 +46,7 @@ collections:
 favicon: favicon.ico
 
 # For splash page layout only, applies to all splash pages
-headimage: spacecat.jpg
+headimage: img/header.jpg
 headtext: Does this thing work?
 headsubtext: I sure hope so
 headbuttonurl: http://www.google.com

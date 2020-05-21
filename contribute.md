@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # How to Contribute to the LibreTime Project
 
 LibreTime is a community project, maintained by an awesome group of volunteers. Being a "free as in freedom" project,

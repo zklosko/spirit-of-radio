@@ -38,11 +38,14 @@ layout: default
        .sidebar {
            position: absolute;
            right: 0;
-           top: 0;
+           top: 57px;
            width: 20%;
            height: 100%; /* Super important! */
-           background-color: white;
-           color: #f05f40;
+           background-color: #f05f40;
+           color: #fff;
+       }
+       .link-style {
+          color: rgba(255,255,255,.7);
        }
     </style>
     
@@ -77,20 +80,17 @@ layout: default
       
       <!-- Sidebar starts here -->
       <div class="sidebar">
-        <br>
-        <br>
-        <br>
         <div class="sidebar-header">
             <h3>Navigation</h3>
         </div>
 
-        {% if site.data.docs.nav[0] %}
-          {% for item in site.data.docs.nav %}
+        {% if site.data.nav.docsnav[0] %}
+          {% for item in site.data.nav.docsnav %}
             <strong>{{ item.title }}</strong>
               {% if item.subfolderitems[0] %}
                 <ul>
                   {% for entry in item.subfolderitems %}
-                      <li><a href="{{ entry.url }}">{{ entry.page }}</a>
+                      <li><a class="link-style" href="{{ entry.url }}">{{ entry.page }}</a>
                   {% endfor %}
                 </ul>
               {% endif %}
