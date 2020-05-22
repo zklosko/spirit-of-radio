@@ -1,7 +1,8 @@
 ---
-title: Up and running in 10 minutes!
-layout: page
+layout: default
 ---
+
+# Up and running in 10 minutes!
 
 LibreTime is quick and easy to install and get running. Follow this guide to go from zero
 to full internet radio station in 10 minutes!
@@ -14,10 +15,10 @@ these are less tested. Firewall and static IP address configuration will need to
 ## Minimum System Requirements
 
 | On-Premises Install  (FM + Internet Radio) | Cloud Install (Internet Radio Only) |
-|---------------------|---------------|
+|---------------------|---------------------|
 | 1 Ghz Processor| 1vCPU |
 | 2 GB RAM | 2 GB RAM |
-| Wired ethernet connection and a static IP address (see below for instructions) | 2 TB of data transfer/month |
+| Wired ethernet connection, static IP address | 2 TB of data transfer/month |
 
 [DigitalOcean](https://www.digitalocean.com/pricing/#Compute) and [Linode](https://www.linode.com/pricing/#row--compute)
  have similar plans that meet Cloud Install requirements. Both plans cost $10/month.

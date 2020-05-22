@@ -7,6 +7,46 @@ Put your layouts in `_layouts`, your includes in `_includes`, your sass files in
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
+## Front-matter options
+
+The `page` layout includes an orange header block that includes a page title and blurb.
+```
+layout: page
+title: Tutorials
+blurb: This page contains links to number of tutorials.
+```
+
+The `post` layout includes a dark header block that includes all the fixin's for a blog post.
+```
+layout: post
+title: How to Contribute to the LibreTime Project
+author: Zachary Klosko
+blurb: Of course you'd want to contribute to LibreTime... right? Here's some ways we could use your help.
+date: May 22, 2020
+```
+
+At the moment, there are no options for `default`, `docs`, or `splash`.
+
+## _config.yml
+
+The splash page header options are in the `_config.yml` file. I tried to put them in the `_layouts/splash.html` file
+but no dice.
+
+```
+# For splash page layout only
+headimage: img/header.jpg
+headtext: Does this thing work?
+headsubtext: I sure hope so
+headbuttonurl: http://www.google.com
+headbuttontext: Does Google know?
+```
+
+The favicon setting is also located in the config file.
+
+```
+favicon: favicon.ico
+```
+
 
 ## Installation
 

@@ -1,12 +1,10 @@
 ---
 layout: post
-title: News You Can Use!
+title: How to Contribute to the LibreTime Project
 author: Zachary Klosko
 blurb: Of course you'd want to contribute to LibreTime... right? Here's some ways we could use your help.
 date: May 22, 2020
 ---
-
-# How to Contribute to the LibreTime Project
 
 LibreTime is a community project, maintained by an awesome group of volunteers. Being a "free as in freedom" project,
 we need the help of our users to keep the project going. You don't have to know how to write code in order to help.
