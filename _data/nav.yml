@@ -11,13 +11,9 @@ topnav:
   url: post
   
 docsnav:
-- title: Some config
-  subfolderitems:
-  - page: Config
-    url: config1
-  - page: More config
-    url: config2
-- title: Even more config
-  subfolderitems:
-  - page: Admin stuff
-    url: adminstuff
+- page: Config
+  url: config1
+- page: More config
+  url: config2
+- page: Admin stuff
+  url: adminstuff

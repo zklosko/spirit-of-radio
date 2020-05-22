@@ -84,36 +84,30 @@ layout: default
         </div>
       </div>
     </nav>
+    <!-- Docs Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-shrink" id="docsNav">
+      <div class="container">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            {% for item in site.data.nav.docsnav %}
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{ item.url }}">{{ item.page }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
     
     <div class="container-lg">
       <!-- This is the main content of the page getting pulled from the MDs -->
       <div class="content">
         {{ content }}
       </div>
-      
-      <!-- Sidebar starts here -->
-      <div class="sidebar">
-        <div class="sidebar-item">
-          <div class="sidebar-header">
-              <h3>Navigation</h3>
-          </div>
-  
-          {% if site.data.nav.docsnav[0] %}
-            {% for item in site.data.nav.docsnav %}
-              <strong>{{ item.title }}</strong>
-                {% if item.subfolderitems[0] %}
-                  <ul>
-                    {% for entry in item.subfolderitems %}
-                        <li><a class="link-style" href="{{ entry.url }}">{{ entry.page }}</a>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              {% endfor %}
-          {% endif %}
-        </div>
-      </div>
     </div>
-    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
