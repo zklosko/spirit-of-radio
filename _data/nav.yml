@@ -1,14 +1,14 @@
 topnav:
-- page: Features
-  url: features
-- page: FAQ
-  url: faq
-- page: Install
-  url: quickstart
-- page: Tutorials
-  url: advanced-configuration
-- page: Contribute to LibreTime
-  url: contribute
+- page: Splash
+  url: index
+- page: Docs
+  url: docs
+- page: Default
+  url: default
+- page: Page
+  url: page
+- page: Post
+  url: post
   
 docsnav:
 - title: Some config

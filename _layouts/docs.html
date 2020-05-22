@@ -41,12 +41,25 @@ layout: default
            top: 57px;
            width: 20%;
            height: 100%; /* Super important! */
-           background-color: #f05f40;
+           background-color: #212529;
            color: #fff;
        }
        .link-style {
-          color: rgba(255,255,255,.7);
+          color: rgba(255,255,255,.9);
        }
+       /* SIDEBAR CONTAINER */
+      .sidebar-item {
+          position: absolute;
+          top: 5px;
+          left: 10%;
+          width: 100%;
+          height: 25%;
+      
+          /* Position the items */
+          &:nth-child(2) { top: 25%; }
+          &:nth-child(3) { top: 50%; }
+          &:nth-child(4) { top: 75%; }
+        }
     </style>
     
     <title>{{ site.title }} - {{ page.title }}</title>
@@ -80,22 +93,24 @@ layout: default
       
       <!-- Sidebar starts here -->
       <div class="sidebar">
-        <div class="sidebar-header">
-            <h3>Navigation</h3>
+        <div class="sidebar-item">
+          <div class="sidebar-header">
+              <h3>Navigation</h3>
+          </div>
+  
+          {% if site.data.nav.docsnav[0] %}
+            {% for item in site.data.nav.docsnav %}
+              <strong>{{ item.title }}</strong>
+                {% if item.subfolderitems[0] %}
+                  <ul>
+                    {% for entry in item.subfolderitems %}
+                        <li><a class="link-style" href="{{ entry.url }}">{{ entry.page }}</a>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              {% endfor %}
+          {% endif %}
         </div>
-
-        {% if site.data.nav.docsnav[0] %}
-          {% for item in site.data.nav.docsnav %}
-            <strong>{{ item.title }}</strong>
-              {% if item.subfolderitems[0] %}
-                <ul>
-                  {% for entry in item.subfolderitems %}
-                      <li><a class="link-style" href="{{ entry.url }}">{{ entry.page }}</a>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            {% endfor %}
-        {% endif %}
       </div>
     </div>
     

@@ -1,5 +1,9 @@
 ---
-layout: default
+layout: post
+title: News You Can Use!
+author: Zachary Klosko
+blurb: Of course you'd want to contribute to LibreTime... right? Here's some ways we could use your help.
+date: May 22, 2020
 ---
 
 # How to Contribute to the LibreTime Project
