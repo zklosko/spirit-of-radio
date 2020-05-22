@@ -217,3 +217,27 @@ header.masthead p{font-weight:300}
   }
   
 .btn-outline-full-width{border:1px solid #888;margin:5px;width:100%}
+
+blockquote {
+border: 1px solid #212529;
+border-left: 10px solid #f05f40;
+border-radius: 0px;
+background: #212529;
+color: white;
+font-size: .9rem;
+margin: 10px;
+padding: 10px 20px;
+}
+ 
+blockquote p {
+margin: 0;
+line-height: 30px;
+padding-bottom: 20px;
+}
+ 
+blockquote .small {
+display: block;
+font-size: 80%;
+color: brown;
+text-align: right;
+} 

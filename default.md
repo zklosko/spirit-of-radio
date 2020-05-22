@@ -1,9 +1,7 @@
 ---
-title: Quick Install
+title: Up and running in 10 minutes!
 layout: page
 ---
-
-# Up and running in 10 minutes!
 
 LibreTime is quick and easy to install and get running. Follow this guide to go from zero
 to full internet radio station in 10 minutes!
