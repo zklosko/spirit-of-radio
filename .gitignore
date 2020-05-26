@@ -4,4 +4,6 @@
 .sass-cache
 _site
 Gemfile.lock
-/_site
+/_site/*
+/.jekyll-cache/*
+.DS_Store
