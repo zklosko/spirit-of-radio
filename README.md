@@ -1,7 +1,7 @@
 # spirit-of-radio
 
 Welcome to **Spirit of Radio**: a Jekyll theme intended for the LibreTime project's website inspired by @ned-kelly.
-A preview can be viewed [here](https://zklosko.github.io/spirit-of-radio/).
+A preview can be viewed [here](https://zklosko.github.io/spirit-of-radio/Docs).
 
 ## Features
 
